@@ -1,5 +1,5 @@
 
 
 exports.example = (req, res) => {
-    res.send({ hello: "world!"})
+    res.render('index')
 }
