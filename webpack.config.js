@@ -4,7 +4,7 @@ module.exports = {
     mode: "production",
     entry: './frontend/main.js',
     output: {
-        path: path.resolve(__dirname, 'public', 'assets', 'scripts'),
+        path: path.resolve(__dirname, 'public', 'scripts'),
         filename: 'bundle.js'
     },
     module: {
@@ -20,8 +20,8 @@ module.exports = {
                 }
             }, 
             {
-                test: /\.csss$/,
-                use: ['style-loader', 'css-loader']
+                test: /\.scss$/,
+                use: ['style-loader', 'sass-loader']
             }
         ]
     },
