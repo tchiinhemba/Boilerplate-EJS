@@ -2,7 +2,7 @@ const path = require('path');
 
 module.exports = {
     mode: "production",
-    entry: '',
+    entry: './frontend/main.js',
     output: {
         path: path.resolve(__dirname, 'public', 'assets', 'scripts'),
         filename: 'bundle.js'
