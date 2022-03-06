@@ -20,8 +20,8 @@ module.exports = {
                 }
             }, 
             {
-                test: /\.scss$/,
-                use: ['style-loader', 'sass-loader']
+                test: /\.s[ac]ss$/i,
+                use: ["style-loader", "sass-loader"]
             }
         ]
     },
