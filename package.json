@@ -4,6 +4,8 @@
   "description": "A simple Server Side Rendering Boilerplate with NodeJs, EJS and Sass using MVC architecture...",
   "main": "index.js",
   "scripts": {
+    "start": "node server.js --ignore public --ignore frontend",
+    "dev": "webpack -w",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -28,7 +30,9 @@
   },
   "dependencies": {
     "core-js": "^3.21.1",
+    "ejs": "^3.1.6",
     "express": "^4.17.3",
-    "regenerator-runtime": "^0.13.9"
+    "regenerator-runtime": "^0.13.9",
+    "sass-loader": "^12.6.0"
   }
 }
